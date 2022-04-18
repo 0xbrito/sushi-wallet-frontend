@@ -1,9 +1,9 @@
-import erc20Abi from "./abis/erc20.json";
-import ownableAbi from "./abis/ownable.json";
+import erc20Abi from "./abis/ERC20.json";
+import walletAbi from "./abis/wallet.json";
 
 const abis = {
   erc20: erc20Abi,
-  ownable: ownableAbi,
+  wallet: walletAbi,
 };
 
 export default abis;

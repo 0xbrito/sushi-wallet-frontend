@@ -1,5 +1,10 @@
 import styled from "styled-components";
 
+const colors = {
+  primary: "#260829",
+  button: "#9ee2e8"
+};
+
 export const Body = styled.div`
   align-items: center;
   color: white;
@@ -11,10 +16,10 @@ export const Body = styled.div`
 `;
 
 export const Button = styled.button`
-  background-color: white;
+  background-color: ${colors.button};
   border: none;
   border-radius: 8px;
-  color: #282c34;
+  color: ${colors.primary};
   cursor: pointer;
   font-size: 16px;
   margin: 0px 20px;
@@ -24,7 +29,7 @@ export const Button = styled.button`
 `;
 
 export const Container = styled.div`
-  background-color: #282c34;
+  background-color: ${colors.primary};
   display: flex;
   flex-direction: column;
   height: calc(100vh);
@@ -32,7 +37,7 @@ export const Container = styled.div`
 
 export const Header = styled.header`
   align-items: center;
-  background-color: #282c34;
+  background-color: ${colors.primary};
   color: white;
   display: flex;
   flex-direction: row;
@@ -41,7 +46,7 @@ export const Header = styled.header`
 `;
 
 export const Image = styled.img`
-  height: 40vmin;
+  height: 20vmin;
   margin-bottom: 16px;
   pointer-events: none;
 `;
